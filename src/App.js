@@ -1,16 +1,17 @@
-// import logo from './logo.svg';
-import './App.scss';
-import {Routes, Route} from 'react-router-dom'
-import Layout from './components/layout'
+import './App.scss'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Layout from './components/layout/layout'
 
 function App() {
   return (
-    <>
-    <Routes>
-      <Route path="/" element={<layout/>}/>
-    </Routes>
-    </>
-  );
+    
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Layout />} />
+        </Routes>
+      </Router>
+    
+  )
 }
 
-export default App;
+export default App
