@@ -1,7 +1,6 @@
 import './side.scss'
 import { Link, NavLink } from 'react-router-dom'
 import Profilepicture from '../../assets/images/Profilepicture.JPG'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faHome,
@@ -15,20 +14,12 @@ const Sidebar = () => (
   <div className="nav-bar">
     <Link className="logo" to="/">
       {/* <img src={Profilepicture} alt="logo" /> */}
-      {/* <img className="sub-logo" src={LogoSubtitle} alt="Sudhanshu" /> */}
     </Link>
     <nav>
       <NavLink exact="true" activeclassname="active" to="/">
         <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
       </NavLink>
-      {/* <NavLink
-        exact="true"
-        activeclassname="active"
-        className="about-link"
-        to="/about"
-      >
-        <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-      </NavLink> */}
+
       <NavLink
         exact="true"
         activeclassname="active"

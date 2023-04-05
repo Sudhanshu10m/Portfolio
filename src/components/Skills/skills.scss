@@ -14,9 +14,14 @@
 
 
     .titleS {
+
         &:hover {
             animation: rubberBand 1s;
             color: #ffd700;
+        }
+
+        @include small {
+            margin-left: 20%;
         }
     }
 
@@ -46,6 +51,8 @@
 
             @include small {
                 margin: 13px;
+                text-align: center;
+
             }
         }
     }
