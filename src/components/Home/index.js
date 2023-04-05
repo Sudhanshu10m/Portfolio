@@ -47,9 +47,6 @@ const Home = () => {
             strArray={nameArray}
             idx={19}
           />
-          {/* <img src={LogoTitle} alt="developer" /> */}
-          {/* <img src={LogoTitle} alt="developer" />
-          <span>udhanshu</span> */}
           <br />
           <AnimatedLetters
             letterClass={letterClass}

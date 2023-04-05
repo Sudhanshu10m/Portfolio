@@ -4,13 +4,15 @@
 #tools {
     position: absolute;
     right: 5%;
-    top: 40%;
+    top: 30%;
     transform: translateY(-26%);
     width: 35%;
     max-height: 90%;
     margin-left: 50px;
     text-align: center;
     animation: fadeIn 1s 4.4s backwards;
+    overflow-y: auto;
+    margin-bottom: 20px;
 
 
     .titleS {
@@ -29,6 +31,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        overflow: auto;
 
         .item {
             margin: 10px;
@@ -52,7 +55,7 @@
             @include small {
                 margin: 13px;
                 text-align: center;
-
+                margin-bottom: 10px;
             }
         }
     }
