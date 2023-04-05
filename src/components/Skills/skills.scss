@@ -11,8 +11,13 @@
     margin-left: 50px;
     text-align: center;
     animation: fadeIn 1s 4.4s backwards;
-    overflow-y: auto;
+
     margin-bottom: 20px;
+
+    @include small {
+        margin-left: 20%;
+        overflow: auto;
+    }
 
 
     .titleS {
@@ -24,6 +29,7 @@
 
         @include small {
             margin-left: 20%;
+            // overflow: auto;
         }
     }
 
