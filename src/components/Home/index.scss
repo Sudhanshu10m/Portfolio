@@ -7,7 +7,7 @@
         left: 10%;
         top: 50%;
         transform: translateY(-50%);
-        width: 40%;
+        width: 30%;
         max-height: 90%;
         margin-left: 50px;
     }
@@ -20,7 +20,7 @@
         font-weight: 400;
 
         &::before {
-            content: '<h1>';
+            // content: '<h1>';
             font-family: 'La Belle Aurore';
             color: #ffd700;
             font-size: 18px;
@@ -31,7 +31,7 @@
         }
 
         &::after {
-            content: '<h1/>';
+            // content: '<h1/>';
             font-family: 'La Belle Aurore';
             color: #ffd700;
             font-size: 18px;
@@ -51,7 +51,7 @@
             animation-delay: 1.4s;
         }
 
-        @include small{
+        @include small {
             font-size: 48px;
         }
     }
@@ -84,5 +84,43 @@
             background: #ffd700;
             color: #333;
         }
+    }
+
+    .skills {
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+        margin-right: 50px;
+    }
+
+    .skill-container {
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            .item {
+                margin: 10px;
+                text-align: center;
+
+                .imeg {
+                    width: 80px;
+                    height: 80px;
+                    object-fit: cover;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    //for the text to display below image
+    .caption {
+        display: block;
     }
 }

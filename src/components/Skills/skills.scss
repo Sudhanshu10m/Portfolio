@@ -1,0 +1,67 @@
+@import "../../styles/mixins.scss";
+// Styling Skills card
+
+#tools {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    transform: translateY(-26%);
+    width: 35%;
+    max-height: 90%;
+    margin-left: 50px;
+    text-align: center;
+    animation: fadeIn 1s 4.4s backwards;
+
+
+    .titleS {
+        &:hover {
+            animation: rubberBand 1s;
+            color: #ffd700;
+        }
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .item {
+            margin: 10px;
+            text-align: center;
+
+            img {
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                @include small {
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+
+            @include small {
+                margin: 13px;
+            }
+        }
+    }
+}
+
+//for the text to display below image
+.caption {
+    display: block;
+    font-family: 'sans-serif';
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 100;
+
+    &:hover {
+        animation: rubberBand 1s;
+        color: #ffd700;
+    }
+
+}
