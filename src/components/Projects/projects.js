@@ -11,24 +11,17 @@ const Project = () => {
         <section>
           <ProjectCard
             key="1"
-            projHead="Tic Tac Toe"
-            description="Two-player Tic Tac Toe game."
-            link="https://github.com/GLADI8R/Tic-Tac-Toe-Game"
-            tags={['HTML', 'JavaScript']}
+            projHead="Taskify"
+            description="Daily task tracker"
+            link="https://github.com/Sudhanshu10m/Taskify"
+            tags={['React', 'Bootstrap']}
           />
           <ProjectCard
             key="2"
-            projHead="To-Do List"
-            description="A webapp to manage your todos."
-            link="https://floating-woodland-35994.herokuapp.com/"
+            projHead="Skullbook"
+            description="Full Stack Web Application used to store users information."
+            link="https://github.com/GLADI8R/SkullBook"
             tags={['Nodejs', 'Mongodb', 'Express', 'Ejs']}
-          />
-          <ProjectCard
-            key="3"
-            projHead="JS Medium"
-            description="A Blog site where you can read and write articles."
-            link="https://github.com/GLADI8R/JSMedium"
-            tags={['Express', 'Mongodb', 'Bcrypt', 'Ejs']}
           />
         </section>
       </div>

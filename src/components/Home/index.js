@@ -32,7 +32,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div className="container home-page">
+    <div className="home-page">
       <div className="text-zone">
         <h1>
           <span className={letterClass}>H</span>
@@ -59,9 +59,9 @@ const Home = () => {
           />
         </h1>
         <h2>Frontend Developer / Tech Enthusiast</h2>
-        <Link to="/contact" className="flat-button">
+        {/* <Link to="/contact" className="flat-button">
           CONTACT ME
-        </Link>
+        </Link> */}
       </div>
       <Skills />
     </div>
