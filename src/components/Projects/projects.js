@@ -11,13 +11,20 @@ const Project = () => {
         <section>
           <ProjectCard
             key="1"
+            projHead="Expense Tracker"
+            description="Full Stack MERN application to track user’s expenses"
+            link="https://github.com/Sudhanshu10m/Expense-Tracker"
+            tags={['React', 'Nodejs', 'Mongodb', 'Express']}
+          />
+          <ProjectCard
+            key="2"
             projHead="Taskify"
             description="Daily task tracker"
             link="https://github.com/Sudhanshu10m/Taskify"
             tags={['React', 'Bootstrap']}
           />
           <ProjectCard
-            key="2"
+            key="3"
             projHead="Skullbook"
             description="Full Stack Web Application used to store users information."
             link="https://github.com/GLADI8R/SkullBook"
